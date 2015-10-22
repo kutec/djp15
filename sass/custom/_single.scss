@@ -1,0 +1,27 @@
+.single{
+	.entry-title{
+		font-size: 18px;
+		font-weight: bold;
+		color: #417C7C;
+		text-shadow: 1px 1px 0px #fff;
+		margin-top: -42px;
+		@include rb(md){
+			margin-top: 0;
+		}
+		.timestamp{
+			font-size: 12px;
+			text-shadow: 0 0 0;
+			font-weight: normal;
+		}
+	}
+	.entry-content{
+		margin: -80px 0 50px 0;
+		padding: 15px;
+		background: $white;
+		box-shadow: 0 0 10px #666;
+	}
+	.entry-footer{
+		padding: 15px 0 0;
+		background: $white;
+	}
+}

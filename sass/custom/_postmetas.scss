@@ -1,0 +1,21 @@
+#photometas{
+	.widget{
+		&.contact,
+		&.read-story{
+			.widget--inner{
+				padding: 0;
+			}
+			.btn{
+				color: $white;
+			}
+		}
+		&.cost{
+			.widget--inner{
+				background: #eee;
+			}
+		}
+	}
+	.widget--inner{
+		margin-bottom: 1px;
+	}
+}

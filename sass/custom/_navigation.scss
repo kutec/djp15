@@ -1,0 +1,60 @@
+/* 	=colors 
+****************************************************/
+
+#nav{
+	background: #999;
+	li{
+		margin-right: $pad;
+		@include rb(sm){ margin-right: 0; }
+		@include rb(xs){ margin-right: 0; }
+	}
+	a{
+		color: skyblue;
+		font-size: 12px;
+		padding: 15px 0;
+		@include rb(sm){ padding: 15px; }
+		@include rb(xs){ padding: 15px; }
+		
+		&:hover, &:active, &:visited, &:focus{
+			background: inherit;
+			color: $warning;
+		}
+		&:active{
+			color: $white;
+		}
+	}
+	li.current-menu-item a{
+		color: $white;
+	}
+}
+
+.socials{
+	ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		
+		li{
+			float: right;
+			margin-left: 15px;
+		}
+	}
+}
+
+#breadcrumbs{
+    list-style:none;
+    margin:10px 0;
+    overflow:hidden;
+}
+  
+#breadcrumbs li{
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:15px;
+}
+  
+#breadcrumbs .separator{
+    font-size:18px;
+    font-weight:100;
+    color:#ccc;
+}

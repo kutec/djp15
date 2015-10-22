@@ -1,0 +1,55 @@
+#header{
+	background: $white;
+	padding: $pad_TB;
+	@include rb(sm){ padding: 15px 0; }
+	@include rb(xs){ padding: 15px 0; }
+	
+	h1{
+		margin: 0;
+		font-size: 24px;
+	}
+	
+	a{
+		text-decoration: none;
+		color: $white;
+		&.btn--opened{
+			color: skyblue;
+		}
+	}
+	
+	.brand{
+		.brand__img{
+			float: left;
+			padding-right: $pad;
+		}
+		.brand__name{
+			display: inline-block;
+			padding-top: 9px;
+			color: #22A8C0;
+			letter-spacing: 3px;
+		}
+		.brand__tagline{
+			color: #bbb;
+			font-size: 11px;
+			letter-spacing: 3px;
+		}
+		
+		.brand__currntPage{
+			font-size: 10px;
+			display: block;
+			color: #888;
+			@include rb(sm){ display: none; }
+			@include rb(xs){ display: none; }
+			
+			& + .brand__name{
+				padding-top: 0;
+			}
+		}	
+	}
+	#navTrigger{
+		position: absolute;
+		right: 0;
+		bottom: 27%;
+		color: rgba(135, 206, 235, 0.34);
+	}
+}

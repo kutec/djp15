@@ -1,0 +1,99 @@
+#portfolio{
+	.post{
+		margin: 30px 0;
+		@include rb(md){
+			margin-top: 30px;
+			&:last-child{
+				margin: 30px 0;
+			}
+		}
+	}
+}
+.post{
+	position: relative;
+	
+	h2{
+		margin-top: 0;
+	}
+	
+	.post--inner{
+		position: relative;
+	}
+	.post--img{
+		img{
+			width: 100%;
+			max-height: auto;
+		}
+	}
+	.post--header{
+		@include prefix('transition','all 0.5s');
+		color: #fff;
+		position: absolute;
+		top: -100%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0,0,0,0);
+		padding: 15px;
+		
+		.timestamp{
+			font-size: 12px;
+			color: #555;
+		}
+		
+		a{
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+	
+	&:hover{
+		.post--header{
+			top: 0;
+			background: rgba(0,0,0,.85);
+		}
+	}
+	
+}
+.home, #portfolio, .archive, .blog, .page{
+	.entry-title, .page-title{
+		font-size: 18px;
+		text-align: center;
+	}
+	.so-widget-sow-image{
+		  max-height: 360px;
+		  overflow: hidden;
+	}
+	.post--inner{
+		overflow: hidden;
+		
+		.post--price{
+			margin: 0;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: -25%;
+			padding: 15px;
+			color: #13D2D2;
+			@include prefix('text-shadow','1px 2px 2px #000');
+			@include prefix('transition','all 0.9s');
+		}
+		
+		&:hover{
+			.post--price{
+				bottom: 0;
+				visibility: visible;
+			}
+		}
+	}
+	#secondary{
+		.secondary-inner{
+			padding: 25px 0 50px;
+			background: #aaa;
+			color: #fff;
+		}
+	}
+}
+.post--sizer{
+	width: 33.33%;
+}
